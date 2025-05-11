@@ -1,0 +1,92 @@
+body {
+  background-color: #f0f8ff; /* Fundo azul claro */
+  color: #2c3e50; /* Cor do texto - azul escuro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: #ffffff; /* Fundo branco para o container */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}button {
+  background-color: #4a89dc; /* Azul vibrante */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px; /* Bordas mais arredondadas */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b7dd8; /* Tom mais escuro no hover */
+  transform: translateY(-2px); /* Efeito de levantar */
+}
+
+#adicionar {
+  background-color: #48cfad; /* Verde água */
+}
+
+#adicionar:hover {
+  background-color: #37bc9b;
+}
+
+#limpar {
+  background-color: #ed5565; /* Vermelho */
+}
+
+#limpar:hover {
+  background-color: #da4453;
+}input, textarea {
+  border: 2px solid #dcdde1;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #4a89dc;
+  outline: none;
+}.meta {
+  background-color: #f5f7fa;
+  border-left: 4px solid #4a89dc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.meta:hover {
+  transform: scale(1.02);
+}
+
+.meta h5 {
+  color: #3bafda;
+  margin-bottom: 5px;
+}/* Animação ao adicionar nova meta */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.meta {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Botão flutuante para voltar ao topo */
+#topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4a89dc;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
